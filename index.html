@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Selamat Ulang Tahun - Hai!</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active" aria-current="page">Beranda</a>
+    <a href="about.html">Tentang Kamu</a>
+    <a href="gallery.html">Galeri Kenangan</a>
+  </nav>
+
+  <main class="container">
+    <h1>Selamat Ulang Tahun! 🎉</h1>
+    <h2>Hari Spesialmu Penuh Keceriaan dan Senyuman</h2>
+    <p>Semoga ulang tahun ini membawa kebahagiaan yang tak terhingga dan kejutan manis untukmu.</p>
+    <button class="btn" id="surpriseBtn" aria-label="Buka kejutan">Buka Kejutan 🎁</button>
+
+    <div id="surprise" class="surprise hidden" aria-live="polite">
+      <p>🎂 Kamu sangat istimewa! Jangan lupa untuk selalu tersenyum dan percaya diri ya!</p>
+      <p>Teruslah bersinar dan mengejar mimpi dengan penuh semangat!</p>
+      <p>🤩 Have a fantastic day!</p>
+    </div>
+
+    <div id="character-container" aria-label="Kartun kartun meriah ulang tahun">
+      <!-- Simple cute SVG character -->
+      <svg width="220" height="220" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="30" r="18" fill="#fbc4ab" />
+        <circle cx="24" cy="28" r="4" fill="#34242a" />
+        <circle cx="40" cy="28" r="4" fill="#34242a" />
+        <path d="M22 40c4 6 12 6 16 0" stroke="#34242a" stroke-width="2" stroke-linecap="round"/>
+        <path d="M24 10c0-3 16-3 16 0" stroke="#e75480" stroke-width="3" stroke-linecap="round" />
+        <circle cx="32" cy="16" r="5" fill="#f56e90" />
+        <rect x="20" y="40" width="24" height="12" rx="3" ry="3" fill="#ff6f91" />
+        <circle cx="32" cy="50" r="5" fill="#f9f7e8" />
+        <text x="32" y="56" font-family="Poppins" text-anchor="middle" fill="#34242a" font-size="12px" font-weight="700">🎂</text>
+      </svg>
+    </div>
+  </main>
+
+  <div id="balloon-container" aria-hidden="true">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <audio id="music" src="https://cdn.pixabay.com/download/audio/2022/03/17/audio_9a9937889b.mp3?filename=birthday-happy-8803.mp3" loop></audio>
+  <button id="music-toggle" class="btn" aria-label="Toggle music">▶️ Putar Musik</button>
+
+  <footer>
+    Made with 🎉 for someone special
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
